@@ -12,7 +12,7 @@ public class ModeleUser {
     {
         //select where designation etc.
         String [] tab = new String [2];
-        BDD uneBDD = new BDD ("127.0.0.1", "stock", "root", "");
+        BDD uneBDD = new BDD ("127.0.0.1", "stock", "root", "92i");
         uneBDD.chargerPilote();
         uneBDD.seConnecter();
         String requete ="select count(email) as nb, nom, prenom from user where email ='"+email+"' and mdp ='"+mdp+"';";  
